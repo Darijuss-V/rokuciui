@@ -37,6 +37,7 @@ while v do
 for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 if v.Name =='LocalScript' or v.Name =='Lighter' then local ass else
 v.Parent = game.Players.LocalPlayer.Character
+wait(0.1)
 end
 end
 wait()
