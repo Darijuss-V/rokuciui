@@ -32,8 +32,8 @@ end)
 Section:NewButton("inf pinigeriai", "balls", function()
 money(math.huge)
 end)
-Section:NewToggle("petard ismetim sistema", "kiausinukai iskepti", function(v)
-while v do
+Section:NewButton("petard ismetim sistema", "kiausinukai iskepti", function(v)
+game:GetService("RunService").Heartbeat:Connect(function()
 for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 if v.Name =='LocalScript' or v.Name =='Lighter' then local ass else
 v.Parent = game.Players.LocalPlayer.Character
@@ -41,6 +41,6 @@ wait(0.1)
 end
 end
 wait()
-end
+end)
 end)
 end
