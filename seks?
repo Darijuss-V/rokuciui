@@ -40,7 +40,6 @@ v.Parent = game.Players.LocalPlayer.Character
 wait(0.1)
 end
 end
-wait()
 end)
 end)
 end
